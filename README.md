@@ -1,11 +1,5 @@
 # intelligent-campus-navigation-assistant
 Intelligent Campus Navigation Assistant is an AI-based navigation system that finds optimal routes between campus locations using graph search algorithms such as BFS, UCS, and A*. The project demonstrates intelligent agent design, pathfinding, and route optimization through an interactive campus map interface.
-Intelligent Campus Navigation Assistant
-Overview
-
-The Intelligent Campus Navigation Assistant is an AI-based pathfinding system that helps users find the most efficient route between campus locations. The campus is modeled as a graph where buildings are nodes and pathways are weighted edges.
-
-The project demonstrates the use of Breadth-First Search (BFS), Uniform Cost Search (UCS), and A* algorithms to determine optimal routes while visualizing the search process and results.
 
 Features
 Interactive campus map visualization
