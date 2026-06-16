@@ -1,81 +1,132 @@
-# intelligent-campus-navigation-assistant
-Intelligent Campus Navigation Assistant is an AI-based navigation system that finds optimal routes between campus locations using graph search algorithms such as BFS, UCS, and A*. The project demonstrates intelligent agent design, pathfinding, and route optimization through an interactive campus map interface.
+# Intelligent Campus Navigation Assistant
 
-Features
-Interactive campus map visualization
-Source and destination selection
-AI search algorithms:
-BFS
-UCS
-A*
-Route distance calculation
-Agent execution logs
-PEAS model representation
-Real-time path highlighting
+## Overview
 
+An AI-based campus navigation system that models a university campus as a graph and computes optimal routes using multiple search algorithms.
 
-PEAS Model
+---
 
-Component          Description
-Performance        Find the shortest and correct route
-Environment	       Static campus graph
-Actuators	         Route visualization and directions
-Sensors	           User inputs and campus map data
+## Features
 
-Campus Locations
+### CO1
 
-Library
-Hostel
-Admin Block
-C Block
-Canteen
-Sports Ground
-Lab Complex
+- PEAS Agent
+- Graph Representation
+- State Space Search
+- Dataclasses
+- Logging
+- Unit Testing
 
-Algorithms Used
-Breadth-First Search (BFS)
+### CO2
 
-Finds paths by exploring nodes level by level.
+Search Algorithms:
 
-Uniform Cost Search (UCS)
+- BFS
+- DFS
+- UCS
+- Greedy Best First Search
+- A*
 
-Finds the least-cost route using edge weights.
+Performance comparison included.
 
-A* Search
+### CO3
 
-Uses path cost and a heuristic estimate for faster route finding.
+Constraint Satisfaction
 
-f(n)=g(n)+h(n)
+- Avoid Construction
+- Avoid Crowds
+- Wheelchair Accessibility
 
-Where:
+### CO4
 
-g(n) = actual path cost
-h(n) = estimated distance to goal
-Workflow
-Select source and destination.
-Choose BFS, UCS, or A*.
-Click Find Route.
+Utility-Based Decision Making
 
-View:
-Optimal path
-Total distance
-Explored nodes
-Agent logs
+User priorities:
 
-Technologies Used
-HTML5
-CSS3
-JavaScript
-SVG Graphics
-Artificial Intelligence Search Algorithms
+- Fastest Route
+- Safest Route
+- Balanced Route
 
-Future Enhancements
-Real-time navigation
-GPS integration
-Dynamic obstacle handling
-Mobile support
-Additional search algorithms
+### CO5
 
-Conclusion
+Bayesian Reasoning
 
-This project demonstrates how intelligent agents use search algorithms to solve navigation problems efficiently. It provides a practical implementation of AI concepts such as graph search, heuristic reasoning, and the PEAS framework in a campus navigation scenario.
+Probability-based delay estimation:
+
+- Rain Probability
+- Crowd Probability
+- Expected Delay
+
+### CO6
+
+Explainable AI
+
+Generates human-readable reasoning:
+
+- Why route was selected
+- Constraints satisfied
+- Utility score
+- Delay probability
+
+---
+
+## Project Structure
+
+```text
+CampusNavigationAI/
+│
+├── main.py
+├── graph.py
+├── models.py
+├── search.py
+├── constraints.py
+├── probability.py
+├── utility.py
+├── explain.py
+├── profiling.py
+├── logger.py
+├── tests.py
+├── campus_map.json
+├── requirements.txt
+└── README.md
+```
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run Application
+
+```bash
+python main.py
+```
+
+## Run Tests
+
+```bash
+python tests.py
+```
+
+## Algorithms Compared
+
+| Algorithm | Optimal | Complete |
+| ---------- | -------- | -------- |
+| BFS | No | Yes |
+| DFS | No | No |
+| UCS | Yes | Yes |
+| Greedy | No | Yes |
+| A* | Yes | Yes |
+
+## Future Enhancements
+
+- Real-time GPS tracking
+- Live crowd monitoring
+- Dynamic rerouting
+- Mobile App Integration
+
+## Author
+
+AI Mini Project
+Intelligent Campus Navigation Assistant
